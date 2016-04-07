@@ -24,9 +24,8 @@ function Button(width, height, label) {
 Button.prototype = Object.create(Widget.prototype);
 
 Button.prototype.render = function($where) {
-	var self = this;
 	// call the parent render()
-	Widget.prototype.render.call(self, $where);
+	Widget.prototype.render.call(this, $where);
 	// add a click handler -> onClick
 	this.$elem.click(this.onClick.bind(this));
 }
