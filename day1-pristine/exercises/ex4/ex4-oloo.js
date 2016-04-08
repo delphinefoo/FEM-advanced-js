@@ -34,9 +34,11 @@ Button.onClick = function(evt) {
 
 $(document).ready(function(){
   var $body = $(document.body);
+
   var btn1 = Object.create(Button);
-  var btn2 = Object.create(Button);
   btn1.setup(25, 25, "First");
+
+  var btn2 = Object.create(Button);
   btn2.setup(75, 50, "Second");
 
   btn1.build($body);
